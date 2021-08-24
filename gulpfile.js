@@ -13,7 +13,7 @@ var fs = require('fs');
 
 const paths = {
   css: {
-    assets: 'app/assets/scss/*.scss',
+    assets: 'app/assets/scss/**/*.scss',
     dest: 'app/dist/styles',
   },
   js: {
