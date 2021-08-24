@@ -44,6 +44,7 @@ const config ={
   top_page:"",
   image_directory:"images/",
   css_directory:"styles/",
+  javascript_directory:"js/",
   pages:""
 };
 
