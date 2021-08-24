@@ -111,13 +111,14 @@ function watch() {
   browserSync.init({
     server: {
       baseDir: './app/dist',
-    },
+    }
   });
   gulp.watch(paths.css.assets, styles);
   gulp.watch(paths.js.assets, scripts);
   // gulp.watch(paths.index.assets).on('change', browserSync.reload);
   // gulp.watch(paths.pages.assets,pages);
-  gulp.watch(paths.index.assets).on('change', browserSync.reload);
+  gulp.watch(paths.index.assets);
+  //gulp.watch(paths.index.assets).on('change', browserSync.reload);
   gulp.watch(paths.pages.assets).on('change', browserSync.reload);
   gulp.watch(paths.images.assets, images);
 }
