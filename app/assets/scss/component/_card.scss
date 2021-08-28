@@ -1,0 +1,48 @@
+.card{
+    border:none !important;
+}
+
+.card-horizontal-body{
+  padding:40px 0 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+    .card-content{
+        position: relative;
+        font-size: $h6-font-size; 
+        line-height: 1.5* $h6-font-size;
+        .card-horizontal-title{
+            font-weight: bold;
+            margin-bottom:map-get($spacers, 1);
+        }     
+        .card-horizontal-value{
+            margin-bottom:map-get($spacers, 2);
+            margin-bottom: 0.5rem; 
+        }
+
+        .card-buttons{
+            position: absolute;
+            bottom: 0;
+        }
+
+    }
+    .card-date{
+        width: 65px;
+        position: relative;
+        .card-date-text{
+            height: 146px;
+            font-size: $h6-font-size;
+            line-height: 1.5*$h6-font-size;
+            font-weight: bold;
+            padding-right: 1rem;
+        }
+        .card-links{
+            position: absolute;
+            bottom: map-get($spacers, 3);
+            .icon{
+                width: map-get($spacers, 6);
+                height:  map-get($spacers, 6);
+            }
+        }
+    }
+}

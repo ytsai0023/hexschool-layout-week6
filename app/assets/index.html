@@ -4,17 +4,110 @@
 <main>
     {% include  "partials/jumbotron.njk"%}
     {% include  "partials/nav.njk"%}
-    <div class="hot-exhibition">
-
+    <div class="hot-exhibition container container-lg">
+        <h1 class="mt-md-12 fs-3">熱門特展</h1>
+        <!-- card 1 start -->
+        <div class="card card-horizontal mt-md-6" style="max-width:100%;">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <img class="img-md" src="{{image_directory}}exhibitions/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="邊緣人">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body card-horizontal-body">
+                        <div class="card-content">
+                            <h5 class="card-horizontal-title">2020 台味設計展</h5>
+                            <p class="card-horizontal-value">$350</p>
+                            <p class="card-horizontal-text col-md-10">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+                            <div class="card-buttons">
+                                <button class="btn btn-horizontal-card btn-secondary">購買票券</button>
+                                <button class="btn btn-horizontal-card btn-transparent-secondary">收藏展覽</button>
+                            </div>
+                        </div>
+                        <div class="card-date">
+                            <div class="card-date-text">
+                                <p>01 <br>JUN<br> | <br>31<br> OCT</p>
+                            </div>    
+                            <div class="card-links">
+                                <a class="icon facebook-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card 1 end -->
+        <!-- card 2 start -->
+        <div class="card card-horizontal mt-md-6" style="max-width:100%;">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <img class="img-md" src="{{image_directory}}exhibitions/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="綠光罩頂">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body card-horizontal-body">
+                        <div class="card-content">
+                            <h5 class="card-horizontal-title">No.22 線上設計展</h5>
+                            <p class="card-horizontal-value">$350</p>
+                            <p class="card-horizontal-text col-md-10">這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。</p>
+                            <div class="card-buttons">
+                                <button class="btn btn-horizontal-card btn-secondary">購買票券</button>
+                                <button class="btn btn-horizontal-card btn-transparent-secondary">收藏展覽</button>
+                            </div>
+                        </div>
+                        <div class="card-date">
+                            <div class="card-date-text">
+                                <p>01 <br>JUN<br> | <br>31<br> OCT</p>
+                            </div>    
+                            <div class="card-links">
+                                <a class="icon facebook-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card 2 end -->
+        <!-- card 3 start -->
+        <div class="card card-horizontal mt-md-6" style="max-width:100%;">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <img class="img-md" src="{{image_directory}}exhibitions/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="毛毛蟲">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body card-horizontal-body">
+                        <div class="card-content">
+                            <h5 class="card-horizontal-title">高雄設計節</h5>
+                            <p class="card-horizontal-value">$350</p>
+                            <p class="card-horizontal-text col-md-10">設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？</p>
+                            <div class="card-buttons">
+                                <button class="btn btn-horizontal-card btn-secondary">購買票券</button>
+                                <button class="btn btn-horizontal-card btn-transparent-secondary">收藏展覽</button>
+                            </div>
+                        </div>
+                        <div class="card-date">
+                            <div class="card-date-text">
+                                <p>01 <br>JUN<br> | <br>31<br> OCT</p>
+                            </div>    
+                            <div class="card-links">
+                                <a class="icon facebook-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card3 end -->
     </div>
+    <!-- exhibitions end -->
+     <!-- streams-review start -->
     <div class="streams-review">
-
+sect1
     </div>
+    <!-- streams-review end -->
+    <!-- what-you-like start -->
     <div class="what-you-like">
-        
+      sect2
     </div>
+    <!-- what-you-like end -->
 </main>
 {% include  "partials/footer.njk"%}
-
 {% endblock %}
-

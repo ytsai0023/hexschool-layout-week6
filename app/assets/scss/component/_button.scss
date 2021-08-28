@@ -10,10 +10,25 @@
     }
 }
 
+.btn-transparent-secondary{
+    border: $secondary 1px solid;
+    color:$secondary;
+    &:hover{
+        border: $secondary 1px solid;
+        color:$secondary;
+        background-color: rgba(255,255,255,0.8);
+    }
+}
+
 .btn-form{
     font-size: 1rem;
     line-height: 1.5rem;
     padding:0.75rem 3.25rem;
-    
 
+}
+
+.btn-horizontal-card{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding:0.75rem 1rem;
 }

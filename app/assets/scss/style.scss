@@ -9,14 +9,18 @@
 @import "../scss/utils/mixins";
 @import "../scss/utils/spacing";
 @import "../scss/layout/header";
+@import  "../scss/layout/title";
 @import "../scss//layout/nav";
 @import "../scss//layout/footer";
+@import "../scss/component/image";
+@import "../scss/component/icons";
 @import "../scss/component/jumbotron";
+@import "../scss/component/card";
 @import "../scss/component/button";
 
 
 .show-border{
-    border: 1px solid #000;
+    border: 1px solid yellow;
 }
 
 
