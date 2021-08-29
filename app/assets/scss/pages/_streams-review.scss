@@ -1,0 +1,14 @@
+.streams-review{
+    &-container{
+       background-image:url("../../images/background/people2.png");
+       background-repeat: no-repeat;
+       background-size:cover;
+    }
+}
+
+.profolio{
+    background-color:rgba(99, 8, 52, 0.9);
+    margin-left:calc(#{map-get($spacers,7)}/2);
+    padding: map-get($spacers,10) map-get($spacers,6);
+}
+

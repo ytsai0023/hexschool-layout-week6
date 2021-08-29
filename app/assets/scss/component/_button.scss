@@ -2,6 +2,10 @@
     @include button-size(0.625rem,3rem,1rem, $btn-border-radius);
 }
 
+.btn-short{
+    @include button-size(0.625rem,2.375rem,1rem, $btn-border-radius);
+}
+
 .btn-transparent{
     border: $white 1px solid;
     &:hover{
