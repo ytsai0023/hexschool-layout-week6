@@ -3,8 +3,12 @@
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
-   height: 400px;
+   
    width: 100%;
+}
+
+.footer-content{
+    height: 400px;;
 }
 
 @include media-mobile{
