@@ -1,6 +1,11 @@
 .img-md{
     height: 350px;
     width: 350px;
+
+    @include media-mobile{
+        height: 350px;
+        width: 100%;
+    }
 }
 .img-lg{
     height: 285px;

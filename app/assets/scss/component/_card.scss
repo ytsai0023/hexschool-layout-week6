@@ -8,12 +8,21 @@
     margin-bottom:map-get($spacers, 1);
     font-size: $h6-font-size; 
     line-height: 1.5* $h6-font-size;
+    @include media-mobile{
+        font-size: $h7-font-size; 
+        line-height: 1.5* $h7-font-size;
+        margin-right: 0.25rem;
+    }
 }     
 .card-value{
     margin-bottom:map-get($spacers, 2);
     margin-bottom: 0.5rem; 
     font-size: $h6-font-size; 
     line-height: 1.5* $h6-font-size;
+    @include media-mobile{
+        font-size: $h7-font-size; 
+    line-height: 1.5* $h7-font-size;
+    }
 }
 
 .card-horizontal-body{
@@ -29,6 +38,7 @@
         }
 
     }
+
     .card-date{
         width: 65px;
         position: relative;
@@ -38,6 +48,10 @@
             line-height: 1.5*$h6-font-size;
             font-weight: bold;
             padding-right: 1rem;
+            @include media-mobile{
+                font-size: $h8-font-size; 
+                line-height: 1.5* $h8-font-size;
+            }
         }
         .card-links{
             position: absolute;
@@ -50,8 +64,48 @@
     }
 }
 
-.card-full{
+@include media-mobile{
+
+.card{
+    border:none !important;
+    padding: 1rem 15px 1rem 15px;
+
+}
     
+
+.card-horizontal-body{
+    padding:0 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+      .card-content{
+          position: static;
+          .card-buttons{
+              position: static;
+              bottom: 0;
+          }
+  
+      }
+      .card-date{
+          width: 65px;
+          position: relative;
+          .card-date-text{
+              height: 146px;
+              font-size: $h6-font-size;
+              line-height: 1.5*$h6-font-size;
+              font-weight: bold;
+              padding-right: 1rem;
+          }
+          .card-links{
+              position: absolute;
+              bottom: map-get($spacers, 3);
+              .icon{
+                  width: map-get($spacers, 6);
+                  height:  map-get($spacers, 6);
+              }
+          }
+      }
+  }
 }
 
 .gallery-card{

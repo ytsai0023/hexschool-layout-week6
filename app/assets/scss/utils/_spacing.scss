@@ -1,5 +1,14 @@
+
 @include media-mobile{
     .top-sm-53{
         top:53% !important;
+    }
+
+    .container-sm-full{
+        max-width: 100%;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
     }
 }

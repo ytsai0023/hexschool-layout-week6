@@ -29,11 +29,12 @@ const paths = {
     dest: 'app/dist'
   },
   layout:{
-    templates: 'app/assets/templates'
+    templates: 'app/assets/templates',
+    icons:'app/assets/images/icon/'
   },
   images: {
     assets: 'app/assets/images/**/*{.png,.jpg,.svg}',
-    dest: 'app/dist/images',
+    dest: 'app/dist/images/**',
   },
   deploy:{
     public:'app/dist/**/*'
@@ -75,7 +76,7 @@ function index() {
     }))
     .pipe(
       nunjucksRender({
-        path: [paths.layout.templates],
+        path: [paths.layout.templates,paths.layout.icons],
         ext: '.html',
       })
     )
@@ -91,7 +92,7 @@ function pages() {
     }))
     .pipe(
       nunjucksRender({
-        path: [paths.layout.templates],
+        path: [paths.layout.templates,paths.layout.icons],
         ext: '.html',
       })
     )
